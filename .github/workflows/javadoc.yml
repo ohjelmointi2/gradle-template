@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          cp -r build/docs/javadoc/* gh-pages/
+          cp build/docs/javadoc gh-pages
           git add gh-pages
           git commit -m "Publish Javadoc"
           git push origin master:gh-pages --force
