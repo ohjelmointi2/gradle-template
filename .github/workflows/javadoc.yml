@@ -29,7 +29,7 @@ jobs:
           java-version: '17'
 
       - name: Build and Generate Javadoc
-        run: ./gradlew javadoc # Replace with the actual Gradle command
+        run: ./gradlew javadoc
 
       - name: Publish Javadoc
         run: |
@@ -42,4 +42,4 @@ jobs:
 
       - name: Cleanup
         run: |
-          rm -rf gh-pages
+          rm -rf docs
